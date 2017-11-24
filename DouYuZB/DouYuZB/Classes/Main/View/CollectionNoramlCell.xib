@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNoramlCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="228" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="CJT-9i-Lhw">
+                        <rect key="frame" x="0.0" y="131" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="2q9-cJ-KMu"/>
+                            <constraint firstAttribute="width" constant="14" id="Ixu-xf-jgV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-GE-7W5">
+                        <rect key="frame" x="19" y="131.5" width="204" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ABs-fb-GcD">
+                        <rect key="frame" x="0.0" y="0.0" width="228" height="126"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-yw-IgX">
+                        <rect key="frame" x="5" y="107.5" width="29.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-95-HDE">
+                        <rect key="frame" x="185" y="105" width="38" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CJT-9i-Lhw" secondAttribute="bottom" constant="10" id="0V9-6j-mep"/>
+                <constraint firstItem="ABs-fb-GcD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DyR-CR-xmv"/>
+                <constraint firstAttribute="trailing" secondItem="ABs-fb-GcD" secondAttribute="trailing" id="FgT-Qb-SRN"/>
+                <constraint firstItem="CJT-9i-Lhw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Iov-Vv-JC2"/>
+                <constraint firstItem="lvd-GE-7W5" firstAttribute="leading" secondItem="CJT-9i-Lhw" secondAttribute="trailing" constant="5" id="Ymf-9t-O4M"/>
+                <constraint firstItem="CJT-9i-Lhw" firstAttribute="top" secondItem="ABs-fb-GcD" secondAttribute="bottom" constant="5" id="Yz0-IP-PBr"/>
+                <constraint firstItem="kx3-95-HDE" firstAttribute="trailing" secondItem="ABs-fb-GcD" secondAttribute="trailing" constant="5" id="dXf-bQ-79e"/>
+                <constraint firstAttribute="trailing" secondItem="lvd-GE-7W5" secondAttribute="trailing" constant="5" id="fjz-XD-Bb8"/>
+                <constraint firstItem="CJT-9i-Lhw" firstAttribute="centerY" secondItem="lvd-GE-7W5" secondAttribute="centerY" id="hA1-RK-Ras"/>
+                <constraint firstItem="I9m-yw-IgX" firstAttribute="leading" secondItem="ABs-fb-GcD" secondAttribute="leading" constant="5" id="hju-8j-IQu"/>
+                <constraint firstItem="kx3-95-HDE" firstAttribute="bottom" secondItem="ABs-fb-GcD" secondAttribute="bottom" constant="-5" id="iVj-8l-4z6"/>
+                <constraint firstItem="CJT-9i-Lhw" firstAttribute="top" secondItem="ABs-fb-GcD" secondAttribute="bottom" constant="5" id="kcg-Em-cMq"/>
+                <constraint firstItem="kx3-95-HDE" firstAttribute="trailing" secondItem="ABs-fb-GcD" secondAttribute="trailing" constant="5" id="oNN-uZ-wQc"/>
+                <constraint firstItem="kx3-95-HDE" firstAttribute="trailing" secondItem="ABs-fb-GcD" secondAttribute="trailing" constant="-5" id="pVE-As-pTz"/>
+                <constraint firstItem="I9m-yw-IgX" firstAttribute="bottom" secondItem="ABs-fb-GcD" secondAttribute="bottom" constant="-5" id="sMZ-ak-cBP"/>
+                <constraint firstItem="ABs-fb-GcD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v7V-Hk-bco"/>
+                <constraint firstItem="kx3-95-HDE" firstAttribute="bottom" secondItem="ABs-fb-GcD" secondAttribute="bottom" constant="-5" id="vni-Xw-aoX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="228" height="155"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dXf-bQ-79e"/>
+                    <exclude reference="iVj-8l-4z6"/>
+                    <exclude reference="oNN-uZ-wQc"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="iconImageView" destination="ABs-fb-GcD" id="cSK-7x-GYp"/>
+                <outlet property="nickNameLabel" destination="I9m-yw-IgX" id="QZf-Hd-tRn"/>
+                <outlet property="onlineBtn" destination="kx3-95-HDE" id="6H9-Nu-ef8"/>
+                <outlet property="roomLabel" destination="lvd-GE-7W5" id="Kqs-AI-gWc"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="218.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-XK-QUC">
+                        <rect key="frame" x="0.0" y="174" width="46" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="UM6-hD-ZQy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="海宁市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="戚小安" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSf-Q8-Ezc">
+                        <rect key="frame" x="5" y="153" width="141" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="sWW-9v-aEc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-bw-lot">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="148"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVz-OS-Ml6">
+                        <rect key="frame" x="83" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="q5c-cE-9sP"/>
+                            <constraint firstAttribute="height" constant="20" id="xTJ-hU-rvJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wSf-Q8-Ezc" firstAttribute="top" secondItem="LsC-bw-lot" secondAttribute="bottom" constant="5" id="2oN-05-vLf"/>
+                <constraint firstItem="wSf-Q8-Ezc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="9nC-Eu-nXn"/>
+                <constraint firstItem="5tp-XK-QUC" firstAttribute="top" secondItem="wSf-Q8-Ezc" secondAttribute="bottom" constant="5" id="H9u-D6-54u"/>
+                <constraint firstItem="uVz-OS-Ml6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="JIM-Zy-BmH"/>
+                <constraint firstItem="LsC-bw-lot" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="P9a-8r-Lae"/>
+                <constraint firstItem="LsC-bw-lot" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b85-fq-Hxr"/>
+                <constraint firstAttribute="trailing" secondItem="LsC-bw-lot" secondAttribute="trailing" id="hhV-7S-mF0"/>
+                <constraint firstAttribute="bottom" secondItem="5tp-XK-QUC" secondAttribute="bottom" constant="10" id="hma-5j-5ME"/>
+                <constraint firstItem="5tp-XK-QUC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ib9-1L-VjZ"/>
+                <constraint firstAttribute="trailing" secondItem="wSf-Q8-Ezc" secondAttribute="trailing" constant="5" id="s4z-Ad-UsF"/>
+                <constraint firstAttribute="trailing" secondItem="uVz-OS-Ml6" secondAttribute="trailing" constant="8" id="zuo-R1-PjP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="151" height="198"/>
+            <connections>
+                <outlet property="cityLabel" destination="5tp-XK-QUC" id="nBc-16-Ndh"/>
+                <outlet property="iconImageView" destination="LsC-bw-lot" id="cOo-in-Fee"/>
+                <outlet property="nickNameLabel" destination="wSf-Q8-Ezc" id="rgv-LO-rnb"/>
+                <outlet property="onlineBtn" destination="uVz-OS-Ml6" id="rSf-2e-CaK"/>
+            </connections>
+            <point key="canvasLocation" x="-37.5" y="70"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
